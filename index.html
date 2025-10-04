@@ -20,12 +20,8 @@
         <h1>Chiguru</h1>
       </div>
 
-      <!-- Hamburger Menu for Mobile -->
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <!-- Toggle for mobile -->
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
 
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -51,7 +47,7 @@
     </div>
   </section>
 
-  <!-- Events -->
+  <!-- Events Section -->
   <section id="events" class="events">
     <h2>Our Cultural Events</h2>
     <div class="event-cards">
@@ -73,12 +69,12 @@
       <div class="card">
         <img src="anaadyanta.jpg" alt="Sriramanavami">
         <h3>Sri Rama Navami</h3>
-        <p>ಶ್ರೀ ರಾಮನ ಜನ್ಮವನ್ನು ಸ್ಮರಿಸಲು ಶ್ರೀ ರಾಮ ನವಮಿಯನ್ನು ಆಚರಿಸಲಾಗುತ್ತದೆ.</p>
+        <p>Tಶ್ರೀ ರಾಮನ ಜನ್ಮವನ್ನು ಸ್ಮರಿಸಲು ಶ್ರೀ ರಾಮ ನವಮಿಯನ್ನು ಆಚರಿಸಲಾಗುತ್ತದೆ.</p>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Gallery Section -->
   <section id="gallery" class="gallery">
     <h2>Event Galleries</h2>
     <div class="gallery-buttons">
@@ -88,7 +84,7 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Stay connected with Chiguru and never miss a cultural moment!</p>
@@ -100,19 +96,19 @@
   </section>
 
   <footer>
-    <p>© 2025 Chiguru Cultural Club, NMIT</p>
+    <p>© 2025 Chiguru Cultural Club, NMIT | Designed with 💛❤</p>
   </footer>
 
-  <!-- JS for Hamburger Menu -->
   <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-
     window.onload = function() { window.scrollTo(0,0); };
+
+    // Toggle menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
   </script>
 
 </body>
