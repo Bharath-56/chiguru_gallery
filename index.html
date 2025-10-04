@@ -101,22 +101,19 @@
 
   <!-- Mobile menu toggle script -->
   <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+  // Create toggle button
+  const toggle = document.createElement('div');
+  toggle.classList.add('menu-toggle');
+  toggle.innerHTML = '<i class="fas fa-bars"></i>';
+  document.querySelector('nav').appendChild(toggle);
 
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
+  // Toggle mobile nav links
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 
-    document.querySelectorAll('.nav-item').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-      });
-    });
-
-    // Ensure page opens at top
-    window.onload = function() { window.scrollTo(0,0); };
-  </script>
 
 </body>
 </html>
