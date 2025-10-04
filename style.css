@@ -17,7 +17,7 @@ header {
   width: 100%;
   top: 0;
   background: rgba(12, 68, 12, 0.9);
-  padding: 10px 0;
+  padding: 16px 0;
   z-index: 1000;
   backdrop-filter: blur(6px);
 }
@@ -103,7 +103,7 @@ nav h1 {
 
 .hero h2 span {
   color: #a8ff9d;
-  text-shadow: 0 0 15px #4aff4a;
+  text-shadow: 0 0 15px #1b3b1a;
 }
 
 .hero p {
@@ -267,13 +267,13 @@ nav h1 {
   font-weight: 600;
   font-size: 1rem;
   color: #fff;
-  background: #4aff4a; /* uniform green background */
+  background: #1b3b1a; /* uniform green background */
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.4);
   transition: all 0.3s ease;
 }
 
 .gallery-btn:hover {
-  background: #2fd92f;
+  background: #1b3b1a;
   transform: scale(1.05);
 }
 
@@ -322,7 +322,7 @@ nav h1 {
 
 /* Contact Section */
 .contact {
-  padding: 100px 20px;
+  padding: 40px 20px;
   background: #1b3b1a;
   color: white;
   text-align: center;
@@ -345,9 +345,18 @@ nav h1 {
 
 /* Footer */
 footer {
-  background: #103810;
+  background: #043104;
   color: #d0f0d0;
   text-align: center;
   padding: 15px 0;
   font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 768px) {
+  /* Add spacing between hero text and button on mobile */
+  .hero-content p {
+    margin-bottom: 40px; /* increase spacing from text to button */
+  }
 }
