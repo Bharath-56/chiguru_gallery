@@ -374,7 +374,7 @@ footer {
   /* Hamburger menu */
   .menu-toggle {
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
     cursor: pointer;
     z-index: 1002;
@@ -385,13 +385,16 @@ footer {
     position: fixed;
     top: 0;
     right: -100%;
-    height: 100%;
+    height: 100vh; /* full screen height */
     width: 250px;
     background: rgba(12, 68, 12, 0.95);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     transition: right 0.3s ease-in-out;
     z-index: 1001;
   }
@@ -402,20 +405,31 @@ footer {
   }
 
   /* Nav link styles for mobile */
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
   .nav-links li a {
     font-size: 1.5rem;
     color: #fff;
     font-weight: 600;
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    transition: background 0.3s;
   }
 
-  /* Hide original nav-links in header row */
-  nav ul.nav-links {
-    display: flex;
+  .nav-links li a:hover {
+    background: rgba(74, 255, 74, 0.2);
+    border-radius: 8px;
   }
 
   /* Ensure logo stays left, hamburger right */
   nav {
     justify-content: space-between;
+    align-items: center;
+    position: relative;
   }
 }
 
