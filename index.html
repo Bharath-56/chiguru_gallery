@@ -21,13 +21,15 @@
       </div>
 
       <!-- Hamburger menu for mobile -->
-      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
 
       <ul class="nav-links">
-        <li><a href="#home" class="nav-item">Home</a></li>
-        <li><a href="#events" class="nav-item">Events</a></li>
-        <li><a href="#gallery" class="nav-item">Gallery</a></li>
-        <li><a href="#contact" class="nav-item">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -69,7 +71,7 @@
       <div class="card">
         <img src="anaadyanta.jpg" alt="Sriramanavami">
         <h3>Sri Rama Navami</h3>
-        <p>ಶ್ರೀ ರಾಮನ ಜನ್ಮವನ್ನು ಸ್ಮರಿಸಲು ಶ್ರೀ ರಾಮ ನವಮಿಯನ್ನು ಆಚರಿಸಲಾಗುತ್ತದೆ.</p>
+        <p>Tಶ್ರೀ ರಾಮನ ಜನ್ಮವನ್ನು ಸ್ಮರಿಸಲು ಶ್ರೀ ರಾಮ ನವಮಿಯನ್ನು ಆಚರಿಸಲಾಗುತ್ತದೆ.</p>
       </div>
     </div>
   </section>
@@ -96,24 +98,23 @@
   </section>
 
   <footer>
-    <p>© 2025 Chiguru Cultural Club, NMIT</p>
+    <p>© 2025 Chiguru Cultural Club, NMIT | Designed with 💛❤</p>
   </footer>
 
-  <!-- Mobile menu toggle script -->
+  <!-- JS for Mobile Toggle -->
   <script>
-  // Create toggle button
-  const toggle = document.createElement('div');
-  toggle.classList.add('menu-toggle');
-  toggle.innerHTML = '<i class="fas fa-bars"></i>';
-  document.querySelector('nav').appendChild(toggle);
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-  // Toggle mobile nav links
-  const navLinks = document.querySelector('.nav-links');
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
+  <!-- Ensure page opens at top -->
+  <script>
+    window.onload = function() { window.scrollTo(0,0); };
+  </script>
 
 </body>
 </html>

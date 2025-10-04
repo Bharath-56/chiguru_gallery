@@ -361,7 +361,7 @@ footer {
   }
 }
 
-/* Keep all existing desktop styles unchanged */
+/* Keep all your existing styles unchanged */
 
 /* Mobile View */
 @media (max-width: 768px) {
@@ -385,7 +385,7 @@ footer {
     position: fixed;
     top: 0;
     right: -100%;
-    height: 100vh; /* full screen height */
+    height: 100vh;
     width: 250px;
     background: rgba(12, 68, 12, 0.95);
     flex-direction: column;
@@ -404,7 +404,6 @@ footer {
     right: 0;
   }
 
-  /* Nav link styles for mobile */
   .nav-links li {
     width: 100%;
     text-align: center;
@@ -425,7 +424,7 @@ footer {
     border-radius: 8px;
   }
 
-  /* Ensure logo stays left, hamburger right */
+  /* Align nav items properly */
   nav {
     justify-content: space-between;
     align-items: center;
@@ -433,7 +432,7 @@ footer {
   }
 }
 
-/* Hide hamburger in desktop view */
+/* Desktop view remains unchanged */
 @media (min-width: 769px) {
   .menu-toggle {
     display: none;
