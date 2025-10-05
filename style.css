@@ -33,12 +33,22 @@ nav {
 .logo-container {
   display: flex;
   align-items: center;
+  color: white;
   gap: 10px;
 }
 
+.nmit-logo {
+  height: 80px;
+  width: 850px;
+  object-fit: cover;
+}
+
+/* ✅ Changed color of NMIT logo text to white */
+
+
 .club-logo {
-  height: 50px;
-  width: 50px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -325,6 +335,12 @@ footer {
 
   .nav-links li {
     margin: 15px 0;
+  }
+
+   .nmit-logo {
+    height: 45px;
+    width: 300px;
+    object-fit: contain;
   }
 
   /* Add spacing between hero text and button */
