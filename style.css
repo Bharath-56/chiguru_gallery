@@ -343,7 +343,7 @@ footer {
     max-width: 300px;
     display: block;
     object-fit: contain;
-    fill: #2E3690 !important; /* Your blue color */
+    fill: #FFFFFF !important; /* Your blue color */
     filter: none;
     visibility: visible !important;
     opacity: 1 !important;
