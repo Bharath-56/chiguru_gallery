@@ -339,9 +339,16 @@ footer {
 
    .nmit-logo {
     height: 45px;
-    width: 300px;
+    width: auto;
+    max-width: 300px;
+    display: block;
     object-fit: contain;
+    fill: #2E3690 !important; /* Your blue color */
+    filter: none;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
+
 
   /* Add spacing between hero text and button */
   .hero-content p { margin-bottom: 40px; }
