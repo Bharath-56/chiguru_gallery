@@ -38,7 +38,7 @@ nav {
 }
 
 .nmit-logo {
-  height: 80px;
+  height: 78px;
   width: 850px;
   object-fit: cover;
 }
@@ -49,7 +49,7 @@ nav {
 .club-logo {
   height: 168px;
   width: 168px;
-  border-radius: 50%;
+  border-radius: 60%;
   object-fit: cover;
 }
 
