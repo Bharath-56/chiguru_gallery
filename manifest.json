@@ -1,11 +1,9 @@
 {
   "name": "Chiguru Cultural Club - NMIT",
   "short_name": "Chiguru",
-  "description": "Official cultural club of NMIT — celebrating Karnataka's rich heritage through art, music, and tradition.",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "https://bharath-56.github.io/chiguru_website/",
+  "scope": "https://bharath-56.github.io/chiguru_website/",
   "display": "standalone",
-  "orientation": "portrait-primary",
   "background_color": "#0B3C5D",
   "theme_color": "#0B3C5D",
   "icons": [
