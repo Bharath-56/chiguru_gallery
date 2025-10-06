@@ -1,27 +1,20 @@
-const CACHE_NAME = 'chiguru-cache-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/manifest.json',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
-];
-
-// Install Service Worker
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
+self.addEventListener("install", (e) => {
+  e.waitUntil(
+    caches.open("chiguru-cache").then((cache) => {
+      return cache.addAll([
+        "/chiguru_website/",
+        "/chiguru_website/index.html",
+        "/chiguru_website/css/style.css",
+        "/chiguru_website/js/script.js",
+        "/chiguru_website/icons/icon-192x192.png",
+        "/chiguru_website/icons/icon-512x512.png"
+      ]);
     })
   );
 });
 
-// Fetch from cache if offline
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
+self.addEventListener("fetch", (e) => {
+  e.respondWith(
+    caches.match(e.request).then((response) => response || fetch(e.request))
   );
 });
