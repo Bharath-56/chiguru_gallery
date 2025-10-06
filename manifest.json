@@ -1,11 +1,13 @@
 {
   "name": "Chiguru Cultural Club - NMIT",
   "short_name": "Chiguru",
-  "start_url": "https://bharath-56.github.io/chiguru_website/",
-  "scope": "https://bharath-56.github.io/chiguru_website/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#1b3b1a",
   "theme_color": "#1b3b1a",
+  "description": "Official website of Chiguru Cultural Club, NMIT — celebrating culture and creativity!",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
