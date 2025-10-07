@@ -47,8 +47,8 @@ nav {
 
 
 .club-logo {
-  height: 168px;
-  width: 168px;
+  height: 170px;
+  width: 170px;
   border-radius: 60%;
   object-fit: cover;
 }
@@ -109,7 +109,7 @@ nav h1 {
   z-index: 2;
   color: #ffffff;
   padding: 0 10px;
-  animation: fadeInHero 2s ease-in-out;
+  animation: fadeInHero 2s ease-in-out; 
   max-width: 1000px;
 }
 
@@ -146,8 +146,8 @@ nav h1 {
 
 .btn:hover {
   background: #135d13;
-  box-shadow: 0 0 30px #1b3b1a, 0 0 45px #1b3b1a;
-  transform: scale(1.1);
+  box-shadow: 0 0 20px #1b3b1a, 0 0 35px #1b3b1a;
+  transform: scale(1.005);
 }
 
 /* Floating Leaves */
@@ -203,12 +203,16 @@ nav h1 {
   width: 300px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  /* 🌟 Permanent soft shadow (like hover effect but always visible) */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
   transition: transform 0.3s;
 }
 
+/* Slight lift only on hover, no shadow change */
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(0.99);
 }
 
 .card img {
@@ -226,6 +230,7 @@ nav h1 {
   padding: 0 15px 20px;
   font-size: 0.95rem;
 }
+
 
 /* Gallery Section */
 .gallery {
