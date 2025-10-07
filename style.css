@@ -46,7 +46,7 @@ nav {
 
 /* Reduce left padding around the logo */
 header, .navbar {
-  padding-left: 0;
+  padding-left: 5px;
 }
 
 .logo img, .nav-logo img {
