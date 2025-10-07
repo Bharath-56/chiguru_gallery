@@ -22,9 +22,10 @@ header {
   backdrop-filter: blur(6px);
 }
 
+/* ✅ Adjusted nav spacing */
 nav {
-  width: 90%;
-  margin: auto;
+  width: 96%; /* reduced space on both sides */
+  margin: 0 auto 0 10px; /* bring logo closer to left edge */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,9 +44,18 @@ nav {
   object-fit: cover;
 }
 
-/* ✅ Changed color of NMIT logo text to white */
+/* Reduce left padding around the logo */
+header, .navbar {
+  padding-left: 0;
+}
 
+.logo img, .nav-logo img {
+  margin-left: 0;
+  padding-left: 0;
+  display: block;
+}
 
+/* Club logo */
 .club-logo {
   height: 170px;
   width: 170px;
@@ -98,8 +108,10 @@ nav h1 {
 
 .overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
   background: linear-gradient(rgba(0, 80, 0, 0.55), rgba(0, 0, 0, 0.6));
   z-index: 1;
 }
@@ -178,9 +190,10 @@ nav h1 {
   50% { transform: translateY(40vh) rotate(180deg); opacity: 0.7; }
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
+
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Ensures section title is visible when navigating */
+  scroll-padding-top: 100px;
 }
 
 /* Events Section */
@@ -195,7 +208,6 @@ html {
   color: #155d27;
 }
 
-/* Event card layout */
 .event-cards {
   display: flex;
   justify-content: center;
@@ -203,27 +215,22 @@ html {
   gap: 30px;
 }
 
-/* Individual cards */
 .card {
   background: #fff;
   width: 300px;
   border-radius: 15px;
   overflow: hidden;
-
-  /* Constant soft shadow (not hover) */
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-
   transition: transform 0.3s ease;
 } 
 
-/* Slight scaling on hover for better interaction */
 .card:hover {
   transform: scale(1.04);
 }
 
 .card img {
   width: 100%;
-  height: 220px; /* Updated image height */
+  height: 220px;
   object-fit: cover;
 }
 
@@ -236,9 +243,6 @@ html {
   padding: 0 15px 20px;
   font-size: 0.95rem;
 }
-
-
-
 
 /* Gallery Section */
 .gallery {
@@ -253,7 +257,6 @@ html {
   font-weight: 600;
 }
 
-/* --- Updated Gallery Buttons --- */
 .gallery-buttons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -284,7 +287,6 @@ html {
   transform: scale(1.05);
 }
 
-/* Large button spanning 2 columns */
 .gallery-btn.large {
   grid-column: span 2;
 }
@@ -297,7 +299,10 @@ html {
   text-align: center;
 }
 
-.contact h2 { color: #aaffaa; margin-bottom: 15px; }
+.contact h2 { 
+  color: #aaffaa; 
+  margin-bottom: 15px; 
+}
 
 .social-icons {
   margin-top: 20px;
@@ -310,7 +315,10 @@ html {
   transition: 0.3s;
 }
 
-.social-icons a:hover { color: #aaffaa; transform: scale(1.2); }
+.social-icons a:hover { 
+  color: #aaffaa; 
+  transform: scale(1.2); 
+}
 
 /* Footer */
 footer {
@@ -350,20 +358,19 @@ footer {
     margin: 15px 0;
   }
 
-   .nmit-logo {
+  .nmit-logo {
     height: 45px;
     width: auto;
     max-width: 300px;
     display: block;
     object-fit: contain;
-    fill: #FFFFFF !important; /* Your blue color */
+    fill: #FFFFFF !important;
     filter: none;
     visibility: visible !important;
     opacity: 1 !important;
   }
 
-
-  /* Add spacing between hero text and button */
-  .hero-content p { margin-bottom: 40px; }
+  .hero-content p { 
+    margin-bottom: 40px; 
+  }
 }
-
