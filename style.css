@@ -221,11 +221,7 @@ html {
   transform: scale(1.04);
 }
 
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
+
 
 .card h3 {
   margin: 15px 0;
@@ -366,3 +362,8 @@ footer {
   .hero-content p { margin-bottom: 40px; }
 }
 
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
