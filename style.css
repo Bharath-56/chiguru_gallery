@@ -218,7 +218,7 @@ html {
 
 /* Slight scaling on hover for better interaction */
 .card:hover {
-  transform: scale(1.009);
+  transform: scale(1.04);
 }
 
 .card img {
