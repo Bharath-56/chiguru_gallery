@@ -178,6 +178,10 @@ nav h1 {
   50% { transform: translateY(40vh) rotate(180deg); opacity: 0.7; }
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Ensures section title is visible when navigating */
+}
 
 /* Events Section */
 .events {
@@ -191,6 +195,7 @@ nav h1 {
   color: #155d27;
 }
 
+/* Event card layout */
 .event-cards {
   display: flex;
   justify-content: center;
@@ -198,21 +203,22 @@ nav h1 {
   gap: 30px;
 }
 
+/* Individual cards */
 .card {
   background: #fff;
   width: 300px;
   border-radius: 15px;
   overflow: hidden;
 
-  /* 🌟 Permanent soft shadow (like hover effect but always visible) */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* Added constant soft shadow (not hover) */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
-/* Slight lift only on hover, no shadow change */
+/* Slight scaling on hover for better interaction */
 .card:hover {
-  transform: scale(0.99);
+  transform: scale(1.05);
 }
 
 .card img {
@@ -232,9 +238,10 @@ nav h1 {
 }
 
 
+
 /* Gallery Section */
 .gallery {
-  padding: 70px 20px;
+  padding: 50px 20px;
   text-align: center;
   background: #e6ffe6;
 }
@@ -283,7 +290,7 @@ nav h1 {
 
 /* Contact Section */
 .contact {
-  padding: 30px 20px;
+  padding: 10px 20px;
   background: #1b3b1a;
   color: white;
   text-align: center;
@@ -358,3 +365,4 @@ footer {
   /* Add spacing between hero text and button */
   .hero-content p { margin-bottom: 40px; }
 }
+
