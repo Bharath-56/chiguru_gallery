@@ -218,12 +218,12 @@ html {
 
 /* Slight scaling on hover for better interaction */
 .card:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 .card img {
   width: 100%;
-  height: 220px; /* Updated image height */
+  height: 200px; /* Updated image height */
   object-fit: cover;
 }
 
