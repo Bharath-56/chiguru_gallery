@@ -210,18 +210,22 @@ html {
   border-radius: 15px;
   overflow: hidden;
 
-  /* Added constant soft shadow (not hover) */
+  /* Constant soft shadow (not hover) */
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 
   transition: transform 0.3s ease;
-}
+} 
 
 /* Slight scaling on hover for better interaction */
 .card:hover {
   transform: scale(1.04);
 }
 
-
+.card img {
+  width: 100%;
+  height: 220px; /* Updated image height */
+  object-fit: cover;
+}
 
 .card h3 {
   margin: 15px 0;
@@ -232,6 +236,7 @@ html {
   padding: 0 15px 20px;
   font-size: 0.95rem;
 }
+
 
 
 
@@ -362,8 +367,3 @@ footer {
   .hero-content p { margin-bottom: 40px; }
 }
 
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
